@@ -15,6 +15,11 @@ async function callPythonScript() {
             body: JSON.stringify(dataToSend)
         });
 
+
+		cosole.log(JSON.stringify(dataToSend));
+
+		
+
         if (!response.ok) {
             throw new Error(`Ошибка сервера: ${response.status}`);
         }
