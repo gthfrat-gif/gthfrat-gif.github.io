@@ -3,7 +3,7 @@ async function callPythonScript() {
     const serverUrl = 'http://localhost:8000/run-script'; 
     
     // Данные, которые мы хотим передать в Python
-	const dataToSend = Array.from(tableBody.rows).map(row => Array.from(row.cells).map(val => val.querySelector('input').value));
+	const dataToSend = Array.from(document.tableBody.rows).map(row => Array.from(row.cells).map(val => val.querySelector('input').value));
 
     try {
         const response = await fetch(serverUrl, {
