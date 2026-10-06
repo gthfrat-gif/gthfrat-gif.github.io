@@ -1,6 +1,7 @@
 async function callPythonScript() {
     // URL вашего удаленного сервера (замените localhost на IP или домен сервера)
-    const serverUrl = 'http://localhost:8000/run-script'; 
+    //const serverUrl = 'http://localhost:8000/run-script'; 
+	const serverUrl = 'https://gthfrat-gif.github.io'
     
     // Данные, которые мы хотим передать в Python
 	const tableBody = document.getElementById('test_table');
